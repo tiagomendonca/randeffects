@@ -110,7 +110,7 @@ icc_cac <- function(results, sd_k, sd_pk, sd_e) {
 ```{r}
 set.seed(12)
 
-m <- 1000    # sample size per period*cluster
+m <- 500    # sample size per period*cluster
 mu   <- 10   # mean of trat A
 beta <- 2    # fixed effect of treatment B
 period <- .5 # fixed effect of periodo
@@ -132,7 +132,7 @@ icc_cac(results, sd_k, sd_pk, sd_e)
 ## 1000 samples per period\*cluster
 
 ```{r}
-m <- 1000    # sample size per period*cluster
+m <- 10^3    # sample size per period*cluster
 mu   <- 10   # mean of trat A
 beta <- 2    # fixed effect of treatment B
 period <- .5 # fixed effect of periodo
@@ -153,7 +153,7 @@ icc_cac(results, sd_k, sd_pk, sd_e)
 ## 10000 samples per period\*cluster
 
 ```{r}
-m <- 1000    # sample size per period*cluster
+m <- 10^4    # sample size per period*cluster
 mu   <- 10   # mean of trat A
 beta <- 2    # fixed effect of treatment B
 period <- .5 # fixed effect of periodo
